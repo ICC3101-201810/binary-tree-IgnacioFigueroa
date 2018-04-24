@@ -27,16 +27,13 @@ namespace Laboratorio_7
             return Contenido;
         }
 
-        public Nodo<T> MostrarNodoPadre()
+        public T MostrarNodoPadre()
         {
-            try
-            {
-                return NodoPadre;
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            return NodoPadre.MostrarContenido();
+        }
+
+        public void CrearHijoIzquierdo(Nodo<T> Nodo, Nodo<T>Padre)
+        {
 
         }
     }
